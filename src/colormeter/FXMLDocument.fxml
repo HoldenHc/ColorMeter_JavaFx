@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="218.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="colormeter.FXMLDocumentController">
+   <children>
+      <HBox prefHeight="200.0" prefWidth="362.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <StackPane prefHeight="182.0" prefWidth="182.0">
+                     <children>
+                        <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_LEFT">
+                           <StackPane.margin>
+                              <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Circle radius="8.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <RadialGradient centerX="0.48295454545454547" centerY="0.5" radius="0.4878048780487805">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </Circle>
+                     </children>
+                  </StackPane>
+                  <Slider fx:id="slider">
+                     <VBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </VBox.margin>
+                  </Slider>
+               </children>
+            </VBox>
+            <Rectangle fx:id="pane_color" arcHeight="5.0" arcWidth="5.0" fill="#e8e8e8" height="186.0" stroke="BLACK" strokeType="INSIDE" width="80.0">
+               <HBox.margin>
+                  <Insets bottom="16.0" top="16.0" />
+               </HBox.margin>
+            </Rectangle>
+            <VBox prefHeight="200.0" prefWidth="120.0">
+               <children>
+                  <Label fx:id="redLabel" text="R: 0" textFill="RED">
+                     <VBox.margin>
+                        <Insets left="8.0" top="36.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="greenLabel" text="G: 0" textFill="LIME">
+                     <VBox.margin>
+                        <Insets left="8.0" top="36.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="blueLabel" text="B: 0" textFill="BLUE">
+                     <VBox.margin>
+                        <Insets bottom="16.0" left="8.0" right="8.0" top="36.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
