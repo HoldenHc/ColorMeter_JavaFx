@@ -1,8 +1,10 @@
 # ColorMeter_JavaFx
 
-## Simple color meter to read the color of the pixel under the mouse
+## Color Meter reads/display the RGV color of the pixel under the mouse
 
 * it is a test, not a finished product
-* done in javaFX, and the creen is captured using awt.Bobot
+* done in javaFX
+* uses awt.Robot to capture the screen 
+
 
 ![alt text](https://github.com/Ulises33/ColorMeter_JavaFx/blob/master/eg.png)
